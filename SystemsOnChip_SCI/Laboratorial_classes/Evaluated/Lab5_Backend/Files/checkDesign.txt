@@ -1,0 +1,94 @@
+Begin checking placement ... (start mem=2005.6M, init mem=2037.6M)
+*info: Recommended don't use cell = 0           
+*info: Placed = 369           
+*info: Unplaced = 0           
+Placement Density:100.00%(2432/2432)
+Placement Density (including fixed std cells):100.00%(2432/2432)
+Finished checkPlace (total: cpu=0:00:00.1, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=2037.6M)
+############################################################################
+# Innovus Netlist Design Rule Check
+# Sun Jan  8 15:21:40 2023
+
+############################################################################
+Design: BATCHARGERctr
+
+------ Design Summary:
+Total Standard Cell Number   (cells) : 369
+Total Block Cell Number      (cells) : 0
+Total I/O Pad Cell Number    (cells) : 0
+Total Standard Cell Area     ( um^2) : 2432.00
+Total Block Cell Area        ( um^2) : 0.00
+Total I/O Pad Cell Area      ( um^2) : 0.00
+
+------ Design Statistics:
+
+Number of Instances            : 369
+Number of Non-uniquified Insts : 351
+Number of Nets                 : 305
+Average number of Pins per Net : 2.77
+Maximum number of Pins in Net  : 21
+
+------ I/O Port summary
+
+Number of Primary I/O Ports    : 84
+Number of Input Ports          : 76
+Number of Output Ports         : 6
+Number of Bidirectional Ports  : 2
+Number of Power/Ground Ports   : 0
+Number of Floating Ports                     *: 2
+Number of Ports Connected to Multiple Pads   *: 0
+Number of Ports Connected to Core Instances   : 82
+**WARN: (IMPREPO-200):	There are 2 Floating Ports in the top design.
+**WARN: (IMPREPO-202):	There are 82 Ports connected to core instances.
+
+------ Design Rule Checking:
+
+Number of Output Pins connect to Power/Ground *: 0
+Number of Insts with Input Pins tied together ?: 10
+Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+Number of Input/InOut Floating Pins            : 0
+Number of Output Floating Pins                 : 0
+Number of Output Term Marked TieHi/Lo         *: 0
+
+**WARN: (IMPREPO-216):	There are 10 Instances with input pins tied together.
+Number of nets with tri-state drivers          : 0
+Number of nets with parallel drivers           : 0
+Number of nets with multiple drivers           : 0
+Number of nets with no driver (No FanIn)       : 0
+Number of Output Floating nets (No FanOut)     : 20
+Number of High Fanout nets (>50)               : 0
+**WARN: (IMPREPO-212):	There are 2 Floating I/O Pins.
+**WARN: (IMPREPO-213):	There are 82 I/O Pins connected to Non-IO Insts.
+Checking for any assigns in the netlist...
+  No assigns found.
+Checking routing tracks.....
+Checking other grids.....
+Checking FINFET Grid is on Manufacture Grid.....
+
+Checking core/die box is on Grid.....
+
+Checking snap rule ......
+
+Checking Row is on grid......
+
+Checking AreaIO row.....
+Checking routing blockage.....
+Checking components.....
+Checking constraints (guide/region/fence).....
+Checking groups.....
+Checking Ptn Core Box.....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+ Design check done.
+Report saved in file checkDesign/BATCHARGERctr.main.htm.ascii
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPREPO-200          1  There are %d Floating Ports in the top d...
+WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
+WARNING   IMPREPO-212          1  There are %d Floating I/O Pins.          
+WARNING   IMPREPO-213          1  There are %d I/O Pins connected to Non-I...
+WARNING   IMPREPO-216          1  There are %d Instances with input pins t...
+*** Message Summary: 5 warning(s), 0 error(s)
+

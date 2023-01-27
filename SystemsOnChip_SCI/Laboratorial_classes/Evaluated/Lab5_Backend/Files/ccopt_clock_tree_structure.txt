@@ -1,0 +1,6 @@
+Clock tree clk:
+ Total FF: 20
+ Max Level: 2
+  (L1) output port clk
+   \_ ... (20 sinks omitted)
+

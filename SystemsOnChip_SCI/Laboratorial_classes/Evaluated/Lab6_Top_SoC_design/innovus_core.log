@@ -1,0 +1,1679 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+Options:	
+Date:		Mon Jan 16 11:37:49 2023
+Host:		fatima.novalocal (x86_64 w/Linux 3.10.0-1160.42.2.el7.x86_64) (1core*4cpus*Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz 16384KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set init_gnd_net dgnd
+<CMD> set init_lef_file {../lef_libs/header8m2t_V55.lef BATCHARGERbg.lef BATCHARGERctr.lef BATCHARGERpower.lef BATCHARGERsaradc.lef }
+<CMD> set init_oa_search_lib {}
+<CMD> set init_pwr_net dvdd
+<CMD> set init_top_cell BATCHARGERcore
+<CMD> set init_verilog BATCHARGERcore.v
+<CMD> init_design
+
+Loading LEF file ../lef_libs/header8m2t_V55.lef ...
+
+Loading LEF file BATCHARGERbg.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file BATCHARGERctr.lef ...
+
+Loading LEF file BATCHARGERpower.lef ...
+
+Loading LEF file BATCHARGERsaradc.lef ...
+
+viaInitial starts at Mon Jan 16 11:38:45 2023
+viaInitial ends at Mon Jan 16 11:38:45 2023
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.36min, fe_real=0.93min, fe_mem=737.1M) ***
+#% Begin Load netlist data ... (date=01/16 11:38:45, mem=610.9M)
+*** Begin netlist parsing (mem=737.1M) ***
+Created 0 new cells from 0 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'BATCHARGERcore.v'
+
+*** Memory Usage v#2 (Current mem = 739.070M, initial mem = 272.281M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:01.0, mem=739.1M) ***
+#% End Load netlist data ... (date=01/16 11:38:46, total cpu=0:00:00.0, real=0:00:01.0, peak res=614.2M, current mem=614.2M)
+Set top cell to BATCHARGERcore.
+Hooked 0 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell BATCHARGERcore ...
+*** Netlist is unique.
+**WARN: (IMPTRN-1101):	Could not determine power-rail locations in cells. Use default value GNDOnBtm.
+** info: there are 5 modules.
+** info: there are 0 stdCell insts.
+** info: there are 4 macros.
+
+*** Memory Usage v#2 (Current mem = 784.500M, initial mem = 272.281M) ***
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_ab' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_o' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_n' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_k' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_bs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_as' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corega_3200' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'core_2800' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'core_3200' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'core' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_ab' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (EMS-27):	Message (IMPFP-3961) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+Extraction setup Started 
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPTRN-1101          1  Could not determine power-rail locations...
+WARNING   IMPFP-3961          32  The techSite '%s' has no related standar...
+WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+*** Message Summary: 34 warning(s), 0 error(s)
+
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site core_2800 -d 640 470.4 5.6 5.6 5.6 5.6
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_ab' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_o' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_n' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_k' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_bs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_as' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corega_3200' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'core_2800' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'core_3200' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'core' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_ab' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (EMS-27):	Message (IMPFP-3961) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> setDrawView fplanso
+**ERROR: (IMPSYT-8100):	Wrong option for setDrawView. Use 'place' instead of.
+<CMD> placeInstance BATCHbg 330 20 R0
+<CMD> placeInstance BATCHctr 350 90 R0
+<CMD> placeInstance BATCHsaradc 20.0 20 R0
+<CMD> placeInstance BATCHpower 20.0 160 R0
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use ANALOG -pinWidth 78.0 -pinDepth 0.512 -fixOverlap 1 -side Top -layer 4 -assign 335 475.6 -pin iforcedbat
+editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1003.0M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use ANALOG -pinWidth 2.0 -pinDepth 0.512 -fixOverlap 1 -side Bottom -layer 4 -assign 230 0 -pin vsensbat
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1004.0M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use ANALOG -pinWidth 50.0 -pinDepth 0.512 -fixOverlap 1 -side Left -layer 3 -assign 0 310.2 -pin vin
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1004.0M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.4 -pinDepth 0.512 -fixOverlap 1 -side Bottom -layer 4 -spreadType center -spacing 4.0 -pin {{sel[0]} {sel[1]} {sel[2]} {sel[3]} en}
+Successfully spread [5] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1004.0M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use ANALOG -pinWidth 2.0 -pinDepth 0.512 -fixOverlap 1 -side Bottom -layer 4 -assign 234 0 -pin vbattemp
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1004.0M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use POWER -pinWidth 2.0 -pinDepth 0.512 -fixOverlap 1 -side Right -layer 3 -assign 645.6 25.0 -pin dvdd
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1004.0M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use GROUND -pinWidth 2.0 -pinDepth 0.512 -fixOverlap 1 -side Right -layer 3 -assign 645.6 30.2 -pin dgnd
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1004.0M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use GROUND -pinWidth 2.0 -pinDepth 0.512 -fixOverlap 1 -side Left -layer 3 -assign 0 160 -pin pgnd
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1004.0M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> add_ndr -width {metal1 2.0 metal2 2.0 metal3 2.0 metal4 2.0 metal5 2.0 metal6 2.0 metal7 2.0 metal8 2.0 } -spacing {metal1 0.4 metal2 0.4 metal3 0.4 metal4 0.4 metal5 0.4 metal6 0.4 metal7 0.4 metal8 0.4 } -min_cut {via2 1 via3 1 via4 1 via5 1 via6 1 via7 1 } -add_via {VIAM1M2A VIAM2M3 VIAM3M4 VIAM4M5 VIAM5M6 VIAM6M7 VIAM7M8 genm1m2_w genm1m2a genm1m2b genm2m3_w genm2m3a genm2m3b genm3m4_w genm3m4a genm3m4b genm4m5_w genm4m5a genm4m5b genm5m6_w genm5m6a genm5m6b genm6m7_w genm6m7a genm6m7b genm7m8_w genm7m8a genm7m8b} -name pwr
+<CMD> setAttribute -net vin -non_default_rule pwr
+<CMD> setAttribute -net iforcedbat -non_default_rule pwr
+<CMD> setAttribute -net pgnd -non_default_rule pwr
+<CMD> setAttribute -net dgnd -non_default_rule pwr
+<CMD> setAttribute -net dvdd -non_default_rule pwr
+<CMD> selectNet dgnd
+<CMD> routeDesign -selected
+#% Begin routeDesign (date=01/16 11:38:47, mem=844.3M)
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 844.37 (MB), peak = 849.98 (MB)
+**INFO: User settings:
+setNanoRouteMode -extractThirdPartyCompatible                   false
+setNanoRouteMode -grouteExpTdUseTifTimingEngineForImportDesign  true
+setNanoRouteMode -routeSelectedNetOnly                          true
+setDelayCalMode -engine                                         aae
+
+#**INFO: setDesignMode -flowEffort standard
+#**INFO: multi-cut via swapping will be performed after routing.
+#**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+**WARN: (IMPTRN-1101):	Could not determine power-rail locations in cells. Use default value GNDOnBtm.
+Begin checking placement ... (start mem=1004.0M, init mem=1013.1M)
+*info: Placed = 4              (Fixed = 4)
+*info: Unplaced = 0           
+Placement Density:0.00%(0/72550)
+Placement Density (including fixed std cells):0.00%(0/72550)
+Finished checkPlace (total: cpu=0:00:00.1, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1013.1M)
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1013.1M) ***
+#**INFO: auto set of droutePostRouteSwapVia to multiCut
+% Begin globalDetailRoute (date=01/16 11:38:47, mem=847.4M)
+
+globalDetailRoute
+
+#Start globalDetailRoute on Mon Jan 16 11:38:47 2023
+#
+#Generating timing data, please wait...
+#135 total nets, 0 already routed, 0 will ignore in trialRoute
+**ERROR: Design must be placed before running Early Global Route
+#Dump tif for version 2.1
+**ERROR: (IMPDC-634):	Failed to build the timing graph since timing library files have not yet been loaded. To resolve this, check that timing library files have been correctly specified in the loaded design database.
+Total number of fetched objects 97
+End delay calculation. (MEM=1069.45 CPU=0:00:00.0 REAL=0:00:00.0)
+#Generating timing data took: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 821.83 (MB), peak = 908.50 (MB)
+#Done generating timing data.
+#WARNING (NRDB-166) Boundary for CELL_VIEW BATCHARGERcore,init is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
+#num needed restored net=0
+#need_extraction net=0 (total=135)
+#WARNING (NRDB-51) SPECIAL_NET dgnd has no instance pin or special wire in its connectivity definition. NET with the same name will be routed but will not be connected to the empty SPECIAL_NET.
+#WARNING (NRDB-51) SPECIAL_NET dvdd has no instance pin or special wire in its connectivity definition. NET with the same name will be routed but will not be connected to the empty SPECIAL_NET.
+#Start reading timing information from file .timing_file_3659.tif.gz ...
+#WARNING (NRDB-194) 
+#No setup time constraints read in
+#Read in timing information for 12 ports, 4 instances from timing file .timing_file_3659.tif.gz.
+#NanoRoute Version 20.11-s130_1 NR200802-2257/20_11-UB
+#Start routing data preparation on Mon Jan 16 11:38:48 2023
+#
+#WARNING (NRDB-2138) Ignore VIA VIA56_HH_mar_W for LAYER via5 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA56_HH_mar_E for LAYER via5 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA45_HH_mar_S for LAYER via4 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA45_HH_mar_N for LAYER via4 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA34_HH_mar_W for LAYER via3 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA34_HH_mar_E for LAYER via3 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA23_HH_mar_S for LAYER via2 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA23_HH_mar_N for LAYER via2 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA67_stack_Def for LAYER via6 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA56_stack_CROSS for LAYER via5 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA56_stack_HAMMER2 for LAYER via5 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA56_stack_HAMMER1 for LAYER via5 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA45_stack_CROSS for LAYER via4 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA45_stack_HAMMER2 for LAYER via4 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA45_stack_HAMMER1 for LAYER via4 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA34_stack_CROSS for LAYER via3 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA34_stack_HAMMER2 for LAYER via3 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA34_stack_HAMMER1 for LAYER via3 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA23_stack_CROSS for LAYER via2 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (NRDB-2138) Ignore VIA VIA23_stack_HAMMER2 for LAYER via2 in RULE pwr. It violates the MINCUTS 2 RULE.
+#WARNING (EMS-27) Message (NRDB-2138) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 3.300.
+#Voltage range [0.000 - 3.300] has 69 nets.
+#Voltage range [0.000 - 0.000] has 66 nets.
+#Rebuild pin access data for design.
+#Initial pin access analysis.
+#Detail pin access analysis.
+# metal1       H   Track-Pitch = 0.4000    Line-2-Via Pitch = 0.3400
+# metal2       V   Track-Pitch = 0.4000    Line-2-Via Pitch = 0.4000
+# metal3       H   Track-Pitch = 0.4000    Line-2-Via Pitch = 0.4000
+# metal4       V   Track-Pitch = 0.4000    Line-2-Via Pitch = 0.4000
+# metal5       H   Track-Pitch = 0.4000    Line-2-Via Pitch = 0.4000
+# metal6       V   Track-Pitch = 0.4000    Line-2-Via Pitch = 0.4000
+# metal7       H   Track-Pitch = 0.8000    Line-2-Via Pitch = 0.8000
+# metal8       V   Track-Pitch = 0.8000    Line-2-Via Pitch = 0.8000
+#Monitoring time of adding inner blkg by smac
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 832.30 (MB), peak = 908.50 (MB)
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer metal3's pitch = 0.4000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 860.95 (MB), peak = 908.50 (MB)
+#
+#Finished routing data preparation on Mon Jan 16 11:38:48 2023
+#
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 36.04 (MB)
+#Total memory = 861.04 (MB)
+#Peak memory = 908.50 (MB)
+#
+#
+#Start global routing on Mon Jan 16 11:38:48 2023
+#
+#
+#Start global routing initialization on Mon Jan 16 11:38:48 2023
+#
+#Number of eco nets is 0
+#
+#Start global routing data preparation on Mon Jan 16 11:38:48 2023
+#
+#Start routing resource analysis on Mon Jan 16 11:38:48 2023
+#
+#Routing resource analysis is done on Mon Jan 16 11:38:49 2023
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  metal1         H         344         831        8346    70.74%
+#  metal2         V         463        1137        8346    70.74%
+#  metal3         H         343         832        8346    70.82%
+#  metal4         V         463        1137        8346    70.88%
+#  metal5         H         343         832        8346    70.74%
+#  metal6         V         463        1137        8346    70.66%
+#  metal7         H         169         418        8346    70.74%
+#  metal8         V         230         570        8346    70.74%
+#  --------------------------------------------------------------
+#  Total                   2820      70.97%       66768    70.76%
+#
+#
+#
+#
+#Global routing data preparation is done on Mon Jan 16 11:38:49 2023
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 862.60 (MB), peak = 908.50 (MB)
+#
+#
+#Global routing initialization is done on Mon Jan 16 11:38:49 2023
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 862.66 (MB), peak = 908.50 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 864.90 (MB), peak = 908.50 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 864.99 (MB), peak = 908.50 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 82 (skipped).
+#Total number of selected nets for routing = 1.
+#Total number of unselected nets (but routable) for routing = 52 (skipped).
+#Total number of nets in the design = 135.
+#
+#52 skipped nets do not have any wires.
+#1 routable net has only global wires.
+#
+#Routed net constraints summary:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default               0  
+#          pwr               1  
+#-----------------------------
+#        Total               1  
+#-----------------------------
+#
+#Routing constraints summary of the whole design:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default              48  
+#          pwr               5  
+#-----------------------------
+#        Total              53  
+#-----------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon       OverCon       OverCon          
+#                  #Gcell        #Gcell        #Gcell    %Gcell
+#     Layer           (1)           (2)           (3)   OverCon
+#  ------------------------------------------------------------
+#  metal1        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal2        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal3        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal4        0(0.00%)      0(0.00%)      1(0.04%)   (0.04%)
+#  metal5        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal6        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal7        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal8        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  ------------------------------------------------------------
+#     Total      0(0.00%)      0(0.00%)      1(0.01%)   (0.01%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 3
+#  Overflow after GR: 0.00% H + 0.01% V
+#
+#Hotspot report including placement blocked areas
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |      layer     |    max hotspot    |   total hotspot   |            hotspot bbox             |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |   metal1(H)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal2(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal3(H)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal4(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal5(H)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal6(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal7(H)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal8(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |      worst     |              0.00 |              0.00 |                                     |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |   all layers   |              0.00 |              0.00 |                                     |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00/0.00 (area is in unit of 4 std-cell row bins)
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 5
+#Total wire length = 949 um.
+#Total half perimeter of net bounding box = 862 um.
+#Total wire length on LAYER metal1 = 19 um.
+#Total wire length on LAYER metal2 = 0 um.
+#Total wire length on LAYER metal3 = 587 um.
+#Total wire length on LAYER metal4 = 343 um.
+#Total wire length on LAYER metal5 = 0 um.
+#Total wire length on LAYER metal6 = 0 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total number of vias = 11
+#Up-Via Summary (total 11):
+#           
+#-----------------------
+# metal1              3
+# metal2              3
+# metal3              5
+#-----------------------
+#                    11 
+#
+#Max overcon = 3 tracks.
+#Total overcon = 0.01%.
+#Worst layer Gcell overcon rate = 0.04%.
+#
+#Global routing statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 4.44 (MB)
+#Total memory = 865.48 (MB)
+#Peak memory = 908.50 (MB)
+#
+#Finished global routing on Mon Jan 16 11:38:49 2023
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 864.27 (MB), peak = 908.50 (MB)
+#Start Track Assignment.
+#Done with 4 horizontal wires in 3 hboxes and 3 vertical wires in 4 hboxes.
+#Done with 0 horizontal wires in 3 hboxes and 0 vertical wires in 4 hboxes.
+#Complete Track Assignment.
+#Total number of nets with non-default rule or having extra spacing = 5
+#Total wire length = 959 um.
+#Total half perimeter of net bounding box = 862 um.
+#Total wire length on LAYER metal1 = 25 um.
+#Total wire length on LAYER metal2 = 0 um.
+#Total wire length on LAYER metal3 = 587 um.
+#Total wire length on LAYER metal4 = 346 um.
+#Total wire length on LAYER metal5 = 0 um.
+#Total wire length on LAYER metal6 = 0 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total number of vias = 11
+#Up-Via Summary (total 11):
+#           
+#-----------------------
+# metal1              3
+# metal2              3
+# metal3              5
+#-----------------------
+#                    11 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 864.61 (MB), peak = 908.50 (MB)
+#
+#Routing data preparation, pin analysis, global routing and track assignment statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:01
+#Increased memory = 39.70 (MB)
+#Total memory = 864.62 (MB)
+#Peak memory = 908.50 (MB)
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#   number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 883.43 (MB), peak = 917.20 (MB)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 5
+#Total wire length = 948 um.
+#Total half perimeter of net bounding box = 862 um.
+#Total wire length on LAYER metal1 = 4 um.
+#Total wire length on LAYER metal2 = 7 um.
+#Total wire length on LAYER metal3 = 590 um.
+#Total wire length on LAYER metal4 = 347 um.
+#Total wire length on LAYER metal5 = 0 um.
+#Total wire length on LAYER metal6 = 0 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total number of vias = 11
+#Total number of multi-cut vias = 9 ( 81.8%)
+#Total number of single cut vias = 2 ( 18.2%)
+#Up-Via Summary (total 11):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# metal1             2 ( 66.7%)         1 ( 33.3%)          3
+# metal2             0 (  0.0%)         3 (100.0%)          3
+# metal3             0 (  0.0%)         5 (100.0%)          5
+#-----------------------------------------------------------
+#                    2 ( 18.2%)         9 ( 81.8%)         11 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:02
+#Elapsed time = 00:00:02
+#Increased memory = 4.53 (MB)
+#Total memory = 869.15 (MB)
+#Peak memory = 917.20 (MB)
+#
+#Start Post Route via swapping...
+#3.77% of area are rerouted by ECO routing.
+#   number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 869.23 (MB), peak = 917.20 (MB)
+#CELL_VIEW BATCHARGERcore,init has no DRC violation.
+#Total number of DRC violations = 0
+#Post Route via swapping is done.
+#Total number of nets with non-default rule or having extra spacing = 5
+#Total wire length = 948 um.
+#Total half perimeter of net bounding box = 862 um.
+#Total wire length on LAYER metal1 = 4 um.
+#Total wire length on LAYER metal2 = 7 um.
+#Total wire length on LAYER metal3 = 590 um.
+#Total wire length on LAYER metal4 = 347 um.
+#Total wire length on LAYER metal5 = 0 um.
+#Total wire length on LAYER metal6 = 0 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total number of vias = 11
+#Total number of multi-cut vias = 11 (100.0%)
+#Up-Via Summary (total 11):
+#                    multi-cut      Total
+#-----------------------------------------
+# metal1             3 (100.0%)          3
+# metal2             3 (100.0%)          3
+# metal3             5 (100.0%)          5
+#-----------------------------------------
+#                   11 (100.0%)         11 
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:02
+#Elapsed time = 00:00:02
+#Increased memory = 4.61 (MB)
+#Total memory = 869.23 (MB)
+#Peak memory = 917.20 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:04
+#Elapsed time = 00:00:04
+#Increased memory = 15.80 (MB)
+#Total memory = 863.16 (MB)
+#Peak memory = 917.20 (MB)
+#Number of warnings = 25
+#Total number of warnings = 26
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Mon Jan 16 11:38:51 2023
+#
+% End globalDetailRoute (date=01/16 11:38:51, total cpu=0:00:04.1, real=0:00:04.0, peak res=917.2M, current mem=862.3M)
+#routeDesign: cpu time = 00:00:04, elapsed time = 00:00:04, memory = 858.13 (MB), peak = 917.20 (MB)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPTRN-1101          1  Could not determine power-rail locations...
+ERROR     IMPDC-634            1  Failed to build the timing graph since t...
+*** Message Summary: 1 warning(s), 1 error(s)
+
+#% End routeDesign (date=01/16 11:38:51, total cpu=0:00:04.3, real=0:00:04.0, peak res=917.2M, current mem=858.1M)
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1(1) metal8(8) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal8(8) } -nets { dgnd } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal8(8) }
+#% Begin sroute (date=01/16 11:38:51, mem=858.2M)
+*** Begin SPECIAL ROUTE on Mon Jan 16 11:38:51 2023 ***
+SPECIAL ROUTE ran on directory: /afs/.ist.utl.pt/users/2/3/ist196923/DIGITAL/P_and_R/FULLCHIP/BATCHARGERcore_v_lefs
+SPECIAL ROUTE ran on machine: fatima.novalocal (Linux 3.10.0-1160.42.2.el7.x86_64 Xeon 2.40Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "dgnd"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 8
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 8
+srouteTopTargetLayerLimit set to 8
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2123.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 16 layers, 8 routing layers, 1 overlap layer
+Read in 4 macros, 4 used
+Read in 4 components
+  4 block/ring components: 0 unplaced, 0 placed, 4 fixed
+Read in 12 physical pins
+  12 physical pins: 0 unplaced, 12 placed, 0 fixed
+Read in 1 blockages
+Read in 12 nets
+Read in 2 special nets, 1 routed
+Read in 12 terminals
+1 net selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1239):	Wire segment (623.00 64.80) (623.00 301.20) on layer metal4 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (623.00 29.20) (623.00 66.80) on layer metal4 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (621.60 65.80) (624.00 65.80) on layer metal4 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (426.20 64.80) (426.20 143.60) on layer metal4 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (622.00 30.20) (639.74 30.20) on layer metal3 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (621.20 300.20) (624.00 300.20) on layer metal3 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (430.40 65.80) (623.60 65.80) on layer metal3 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (426.20 141.60) (426.20 144.00) on layer metal3 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (425.20 65.80) (432.40 65.80) on layer metal3 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (49.60 143.00) (427.20 143.00) on layer metal3 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (431.40 60.80) (431.40 66.80) on layer metal2 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (50.60 141.60) (50.60 144.00) on layer metal2 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (621.20 299.70) (623.20 299.70) on layer metal2 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (431.40 60.50) (431.40 61.90) on layer metal2 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (50.60 141.30) (50.60 142.70) on layer metal2 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (620.60 300.20) (622.28 300.20) on layer metal1 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (431.00 59.80) (431.00 60.68) on layer metal1 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (430.92 60.60) (431.48 60.60) on layer metal1 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (50.20 140.60) (50.20 141.48) on layer metal1 has no shape definition.
+**WARN: (IMPSR-1239):	Wire segment (50.12 141.40) (50.68 141.40) on layer metal1 has no shape definition.
+**WARN: (IMPSR-1973):	Same Warning messages will be suppressed after 20 warnings
+**WARN: (IMPSR-1242):	Before power routing: 20 wire segments without shape definitions are set to BLOCKRING inside core area and CORERING outside core area.
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the dgnd net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the dgnd net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the dgnd net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net dgnd. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-2031):	For net dgnd, no suitable cell can be taken as reference cell for followpin generation at (5.600 5.600) (634.400 8.400). Specify option -corePinLayer to generate followpin on metal3 or above layers. Similar warnings suppressed.
+**WARN: (IMPSR-2031):	For net dgnd, no suitable cell can be taken as reference cell for followpin generation at (5.600 5.600) (634.400 8.400). Specify option -corePinLayer to generate followpin on metal3 or above layers. Similar warnings suppressed.
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 2126.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 12 io pins ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 0 wire.
+ViaGen created 0 via, deleted 0 via to avoid violation.
+#% End sroute (date=01/16 11:38:51, total cpu=0:00:00.1, real=0:00:00.0, peak res=862.3M, current mem=862.3M)
+<CMD> placeAIO
+Estimated cell power/ground rail width = 0.350 um
+**WARN: (IMPSP-390):	Could not determine power-rail locations, as no insts available to check PGTerms.
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#15 (mem=1053.0M)" ...
+No user-set net weight.
+Net fanout histogram:
+2		: 44 (83.0%) nets
+3		: 6 (11.3%) nets
+4     -	14	: 3 (5.7%) nets
+15    -	39	: 0 (0.0%) nets
+40    -	79	: 0 (0.0%) nets
+80    -	159	: 0 (0.0%) nets
+160   -	319	: 0 (0.0%) nets
+320   -	639	: 0 (0.0%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 0 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: clkGateAware ignoreScan pinGuide congEffort=medium gpeffort=fast 
+Scan chains were not defined.
+**WARN: (IMPDB-2078):	Output pin dvdd of instance BATCHsaradc is connected to power net dvdd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dvdd of instance BATCHpower is connected to power net dvdd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dvdd of instance BATCHbg is connected to power net dvdd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dgnd of instance BATCHsaradc is connected to ground net dgnd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dgnd of instance BATCHpower is connected to ground net dgnd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dgnd of instance BATCHbg is connected to ground net dgnd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dgnd of instance BATCHctr is connected to ground net tiedown.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+#std cell=0 (0 fixed + 0 movable) #buf cell=0 #inv cell=0 #block=4 (0 floating + 4 preplaced)
+#ioInst=0 #net=51 #term=110 #term/net=2.16, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=10
+stdCell: 0 single + 0 double + 0 multi
+Total standard cell length = 0.0000 (mm), area = 0.0000 (mm^2)
+**WARN: (IMPSP-390):	Could not determine power-rail locations, as no insts available to check PGTerms.
+Average module density = -nan.
+Density for the design = 0.000.
+       = stdcell_area 0 sites (0 um^2) / alloc_area 64531 sites (72275 um^2).
+Pin Density = 0.0004293.
+            = total # of pins 110 / total area 256236.
+Applying critslk net weight for 0 nets ...
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  2: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  3: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  4: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  5: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  6: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  7: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  8: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:01.0 mem = 1053.0M
+Iteration  9: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration 10: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration 11: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration 12: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration 13: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+macro_flip: HPWL decrease ratio is -nan, horizontally flipped 0, vertically flipped 0
+Iteration 14: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+*** cost = 1.515e+04 (1.03e+04 4.87e+03) (cpu for global=0:00:00.0) real=0:00:01.0***
+Info: 0 clock gating cells identified, 0 (on average) moved 0/10
+**WARN: (IMPDB-2078):	Output pin dvdd of instance BATCHsaradc is connected to power net dvdd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dvdd of instance BATCHpower is connected to power net dvdd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dvdd of instance BATCHbg is connected to power net dvdd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dgnd of instance BATCHsaradc is connected to ground net dgnd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dgnd of instance BATCHpower is connected to ground net dgnd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dgnd of instance BATCHbg is connected to ground net dgnd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dgnd of instance BATCHctr is connected to ground net tiedown.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPSP-390):	Could not determine power-rail locations, as no insts available to check PGTerms.
+*** Starting IO Refinement ...
+**WARN: (IMPSP-6008):	There are no area I/O rows.
+*** End IO Refinement (cpu=0:00:00.0, real=0:00:00.0, mem=1053.0M) ***
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#15 (mem=1053.0M)" ...
+No user-set net weight.
+Net fanout histogram:
+2		: 44 (86.3%) nets
+3		: 6 (11.8%) nets
+4     -	14	: 1 (2.0%) nets
+15    -	39	: 0 (0.0%) nets
+40    -	79	: 0 (0.0%) nets
+80    -	159	: 0 (0.0%) nets
+160   -	319	: 0 (0.0%) nets
+320   -	639	: 0 (0.0%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 0 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+Scan chains were not defined.
+**WARN: (IMPDB-2078):	Output pin dvdd of instance BATCHsaradc is connected to power net dvdd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dvdd of instance BATCHpower is connected to power net dvdd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dvdd of instance BATCHbg is connected to power net dvdd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dgnd of instance BATCHsaradc is connected to ground net dgnd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dgnd of instance BATCHpower is connected to ground net dgnd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin dgnd of instance BATCHbg is connected to ground net dgnd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (EMS-27):	Message (IMPDB-2078) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+#std cell=0 (0 fixed + 0 movable) #buf cell=0 #inv cell=0 #block=4 (0 floating + 4 preplaced)
+#ioInst=0 #net=51 #term=110 #term/net=2.16, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=10
+stdCell: 0 single + 0 double + 0 multi
+Total standard cell length = 0.0000 (mm), area = 0.0000 (mm^2)
+**WARN: (IMPSP-390):	Could not determine power-rail locations, as no insts available to check PGTerms.
+Average module density = -nan.
+Density for the design = 0.000.
+       = stdcell_area 0 sites (0 um^2) / alloc_area 64531 sites (72275 um^2).
+Pin Density = 0.0004293.
+            = total # of pins 110 / total area 256236.
+Applying critslk net weight for 0 nets ...
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  2: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  3: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  4: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  5: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  6: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  7: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  8: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration  9: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration 10: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+Iteration 11: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1053.0M
+Iteration 12: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1053.0M
+Iteration 13: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1053.0M
+macro_flip: HPWL decrease ratio is -nan, horizontally flipped 0, vertically flipped 0
+Iteration 14: Total net bbox = 1.515e+04 (1.03e+04 4.87e+03)
+              Est.  stn bbox = 1.517e+04 (1.03e+04 4.87e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1053.0M
+*** cost = 1.515e+04 (1.03e+04 4.87e+03) (cpu for global=0:00:00.3) real=0:00:00.0***
+Info: 0 clock gating cells identified, 0 (on average) moved 0/16
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+**WARN: (IMPSP-390):	Could not determine power-rail locations, as no insts available to check PGTerms.
+*** Starting refinePlace (0:00:27.9 mem=1053.0M) ***
+Total net bbox length = 1.515e+04 (1.028e+04 4.868e+03) (ext = 1.261e+03)
+**WARN: (IMPSP-2022):	No instances to legalize in design.
+Type 'man IMPSP-2022' for more detail.
+Total net bbox length = 1.515e+04 (1.028e+04 4.868e+03) (ext = 1.261e+03)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1053.0MB
+*** Finished refinePlace (0:00:27.9 mem=1053.0M) ***
+*** End of Placement (cpu=0:00:00.4, real=0:00:00.0, mem=1053.0M) ***
+**WARN: (IMPSP-390):	Could not determine power-rail locations, as no insts available to check PGTerms.
+default core: bins with density > 0.750 = 61.38 % ( 240 / 391 )
+Density distribution unevenness ratio = 21.865%
+<CMD> setAttribute -net vrefa -shield_net dgnd
+<CMD> setAttribute -net vrefb -shield_net dgnd
+<CMD> selectNet -shield
+<CMD> setDrawView place
+<CMD> setPlaceMode -fp false
+<CMD> place_design
+**WARN: (IMPSP-9513):	Timing constraint file does not exist
+**WARN: (IMPSP-9514):	Non-TimingDriven placement will be performed.
+*** Starting placeDesign default flow ***
+Warning: No placeable instances.
+Warning: No placeable instances. Skip congRepair.
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 0, real = 0: 0: 0, mem = 1053.0M **
+Tdgp not successfully inited but do clear! skip clearing
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSP-9513           1  Timing constraint file does not exist    
+WARNING   IMPSP-9514           1  Non-TimingDriven placement will be perfo...
+*** Message Summary: 2 warning(s), 0 error(s)
+
+<CMD> setNanoRouteMode -quiet -timingEngine {}
+<CMD> setNanoRouteMode -quiet -routeTopRoutingLayer default
+<CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer default
+<CMD> setNanoRouteMode -quiet -drouteEndIteration default
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven false
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven false
+<CMD> routeDesign -globalDetail
+#% Begin routeDesign (date=01/16 11:38:52, mem=864.6M)
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 864.59 (MB), peak = 917.20 (MB)
+#WARNING (NRIG-96) Selected single pass global detail route "-globalDetail". Clock eco and post optimizations will not be run. See "man NRIG-96" for more details.
+**INFO: User settings:
+setNanoRouteMode -extractThirdPartyCompatible                   false
+setNanoRouteMode -grouteExpTdUseTifTimingEngineForImportDesign  true
+setNanoRouteMode -routeWithSiDriven                             false
+setNanoRouteMode -routeWithTimingDriven                         false
+setNanoRouteMode -timingEngine                                  {}
+setExtractRCMode -engine                                        preRoute
+setDelayCalMode -engine                                         aae
+setDelayCalMode -ignoreNetLoad                                  false
+
+#**INFO: setDesignMode -flowEffort standard
+#**INFO: multi-cut via swapping will not be performed after routing.
+#**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+Begin checking placement ... (start mem=1053.0M, init mem=1053.0M)
+*info: Placed = 4              (Fixed = 4)
+*info: Unplaced = 0           
+Placement Density:0.00%(0/72550)
+Placement Density (including fixed std cells):0.00%(0/72550)
+Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1053.0M)
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1053.0M) ***
+% Begin globalDetailRoute (date=01/16 11:38:52, mem=864.6M)
+
+globalDetailRoute
+
+#Start globalDetailRoute on Mon Jan 16 11:38:52 2023
+#
+#num needed restored net=0
+#need_extraction net=0 (total=135)
+#WARNING (NRDB-51) SPECIAL_NET dgnd has no instance pin or special wire in its connectivity definition. NET with the same name will be routed but will not be connected to the empty SPECIAL_NET.
+#WARNING (NRDB-51) SPECIAL_NET dvdd has no instance pin or special wire in its connectivity definition. NET with the same name will be routed but will not be connected to the empty SPECIAL_NET.
+#NanoRoute Version 20.11-s130_1 NR200802-2257/20_11-UB
+#Start routing data preparation on Mon Jan 16 11:38:52 2023
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 3.300.
+#Voltage range [0.000 - 3.300] has 69 nets.
+#Voltage range [0.000 - 0.000] has 66 nets.
+#Rebuild pin access data for design.
+#Initial pin access analysis.
+#Detail pin access analysis.
+# metal1       H   Track-Pitch = 0.4000    Line-2-Via Pitch = 0.3400
+# metal2       V   Track-Pitch = 0.4000    Line-2-Via Pitch = 0.4000
+# metal3       H   Track-Pitch = 0.4000    Line-2-Via Pitch = 0.4000
+# metal4       V   Track-Pitch = 0.4000    Line-2-Via Pitch = 0.4000
+# metal5       H   Track-Pitch = 0.4000    Line-2-Via Pitch = 0.4000
+# metal6       V   Track-Pitch = 0.4000    Line-2-Via Pitch = 0.4000
+# metal7       H   Track-Pitch = 0.8000    Line-2-Via Pitch = 0.8000
+# metal8       V   Track-Pitch = 0.8000    Line-2-Via Pitch = 0.8000
+#Monitoring time of adding inner blkg by smac
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 869.52 (MB), peak = 917.20 (MB)
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer metal3's pitch = 0.4000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 886.66 (MB), peak = 917.20 (MB)
+#
+#Finished routing data preparation on Mon Jan 16 11:38:52 2023
+#
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 21.54 (MB)
+#Total memory = 886.66 (MB)
+#Peak memory = 917.20 (MB)
+#
+#
+#Start global routing on Mon Jan 16 11:38:52 2023
+#
+#
+#Start global routing initialization on Mon Jan 16 11:38:52 2023
+#
+#Number of eco nets is 0
+#
+#Start global routing data preparation on Mon Jan 16 11:38:52 2023
+#
+#Start routing resource analysis on Mon Jan 16 11:38:52 2023
+#
+#WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
+#Routing resource analysis is done on Mon Jan 16 11:38:52 2023
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  metal1         H         344         831        8346    70.74%
+#  metal2         V         463        1137        8346    70.74%
+#  metal3         H         343         832        8346    70.82%
+#  metal4         V         463        1137        8346    70.88%
+#  metal5         H         343         832        8346    70.74%
+#  metal6         V         463        1137        8346    70.66%
+#  metal7         H         169         418        8346    70.74%
+#  metal8         V         230         570        8346    70.74%
+#  --------------------------------------------------------------
+#  Total                   2820      70.97%       66768    70.76%
+#
+#  2 nets (1.48%) with 1 preferred extra spacing.
+#
+#
+#
+#Global routing data preparation is done on Mon Jan 16 11:38:52 2023
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 888.23 (MB), peak = 917.20 (MB)
+#
+#WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
+#
+#Global routing initialization is done on Mon Jan 16 11:38:52 2023
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 888.23 (MB), peak = 917.20 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 890.70 (MB), peak = 917.20 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 890.70 (MB), peak = 917.20 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 82 (skipped).
+#Total number of routable nets = 53.
+#Total number of nets in the design = 135.
+#
+#53 routable nets have only global wires.
+#2 global routed or unrouted (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#
+#Routed nets constraints summary:
+#-----------------------------------------
+#        Rules   Shielding   Unconstrained  
+#-----------------------------------------
+#      Default           2              46  
+#          pwr           0               5  
+#-----------------------------------------
+#        Total           2              51  
+#-----------------------------------------
+#
+#Routing constraints summary of the whole design:
+#-----------------------------------------
+#        Rules   Shielding   Unconstrained  
+#-----------------------------------------
+#      Default           2              46  
+#          pwr           0               5  
+#-----------------------------------------
+#        Total           2              51  
+#-----------------------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon       OverCon       OverCon          
+#                  #Gcell        #Gcell        #Gcell    %Gcell
+#     Layer           (1)           (2)           (3)   OverCon
+#  ------------------------------------------------------------
+#  metal1        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal2        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal3        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal4        0(0.00%)      0(0.00%)      1(0.04%)   (0.04%)
+#  metal5        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal6        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal7        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal8        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  ------------------------------------------------------------
+#     Total      0(0.00%)      0(0.00%)      1(0.01%)   (0.01%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 3
+#  Overflow after GR: 0.00% H + 0.01% V
+#
+#Hotspot report including placement blocked areas
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |      layer     |    max hotspot    |   total hotspot   |            hotspot bbox             |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |   metal1(H)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal2(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal3(H)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal4(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal5(H)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal6(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal7(H)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal8(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |      worst     |              0.00 |              0.00 |                                     |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |   all layers   |              0.00 |              0.00 |                                     |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00/0.00 (area is in unit of 4 std-cell row bins)
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 7
+#Total wire length = 18163 um.
+#Total half perimeter of net bounding box = 17058 um.
+#Total wire length on LAYER metal1 = 9050 um.
+#Total wire length on LAYER metal2 = 4407 um.
+#Total wire length on LAYER metal3 = 3191 um.
+#Total wire length on LAYER metal4 = 1515 um.
+#Total wire length on LAYER metal5 = 0 um.
+#Total wire length on LAYER metal6 = 0 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total number of vias = 211
+#Up-Via Summary (total 211):
+#           
+#-----------------------
+# metal1            141
+# metal2             51
+# metal3             19
+#-----------------------
+#                   211 
+#
+#Max overcon = 3 tracks.
+#Total overcon = 0.01%.
+#Worst layer Gcell overcon rate = 0.04%.
+#
+#Global routing statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 4.19 (MB)
+#Total memory = 890.85 (MB)
+#Peak memory = 917.20 (MB)
+#
+#Finished global routing on Mon Jan 16 11:38:53 2023
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 888.60 (MB), peak = 917.20 (MB)
+#Start Track Assignment.
+#Done with 137 horizontal wires in 3 hboxes and 93 vertical wires in 4 hboxes.
+#Done with 29 horizontal wires in 3 hboxes and 14 vertical wires in 4 hboxes.
+#Done with 3 horizontal wires in 3 hboxes and 4 vertical wires in 4 hboxes.
+#
+#Track assignment summary:
+# layer   (wire length)   (overlap)     (long ovlp)	(with obs/pg/clk)  
+#------------------------------------------------------------------------
+# metal1      8353.32 	  1.31%  	  0.00% 	  1.18%
+# metal2      4387.82 	  0.00%  	  0.00% 	  0.00%
+# metal3      3238.42 	  0.09%  	  0.00% 	  0.09%
+# metal4      1527.65 	  0.22%  	  0.00% 	  0.22%
+# metal5         0.00 	  0.00%  	  0.00% 	  0.00%
+# metal6         0.00 	  0.00%  	  0.00% 	  0.00%
+# metal7         0.00 	  0.00%  	  0.00% 	  0.00%
+# metal8         0.00 	  0.00%  	  0.00% 	  0.00%
+#------------------------------------------------------------------------
+# All       17507.21  	  0.66% 	  0.00% 	  0.00%
+#Complete Track Assignment.
+#Total number of nets with non-default rule or having extra spacing = 7
+#Total wire length = 18226 um.
+#Total half perimeter of net bounding box = 17058 um.
+#Total wire length on LAYER metal1 = 9064 um.
+#Total wire length on LAYER metal2 = 4421 um.
+#Total wire length on LAYER metal3 = 3228 um.
+#Total wire length on LAYER metal4 = 1513 um.
+#Total wire length on LAYER metal5 = 0 um.
+#Total wire length on LAYER metal6 = 0 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total number of vias = 211
+#Up-Via Summary (total 211):
+#           
+#-----------------------
+# metal1            141
+# metal2             51
+# metal3             19
+#-----------------------
+#                   211 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 888.75 (MB), peak = 917.20 (MB)
+#
+#Routing data preparation, pin analysis, global routing and track assignment statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 23.64 (MB)
+#Total memory = 888.76 (MB)
+#Peak memory = 917.20 (MB)
+#WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#   number of violations = 2
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	metal1        1        0        1
+#	metal2        0        1        1
+#	Totals        1        1        2
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 905.76 (MB), peak = 941.44 (MB)
+#start 1st optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	metal1        0        0
+#	metal2        1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 905.39 (MB), peak = 941.44 (MB)
+#start 2nd optimization iteration ...
+#   number of violations = 2
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	metal1        0        0        0
+#	metal2        1        1        2
+#	Totals        1        1        2
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 906.46 (MB), peak = 941.44 (MB)
+#start 3rd optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	metal1        0        0
+#	metal2        1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 906.39 (MB), peak = 941.44 (MB)
+#start 4th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	metal1        0        0
+#	metal2        1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 906.20 (MB), peak = 941.44 (MB)
+#start 5th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	metal1        0        0
+#	metal2        1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 906.49 (MB), peak = 941.44 (MB)
+#start 6th optimization iteration ...
+#   number of violations = 2
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	metal1        0        0        0
+#	metal2        1        1        2
+#	Totals        1        1        2
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 906.48 (MB), peak = 941.44 (MB)
+#start 7th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	metal1        0        0
+#	metal2        1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 905.14 (MB), peak = 941.44 (MB)
+#start 8th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	metal1        0        0
+#	metal2        1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 906.42 (MB), peak = 941.44 (MB)
+#start 9th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	metal1        0        0
+#	metal2        1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 906.57 (MB), peak = 941.44 (MB)
+#start 10th optimization iteration ...
+#   number of violations = 2
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	metal1        0        0        0
+#	metal2        1        1        2
+#	Totals        1        1        2
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 906.56 (MB), peak = 941.44 (MB)
+#start 11th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	metal1        0        0
+#	metal2        1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 906.79 (MB), peak = 941.44 (MB)
+#start 12th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	metal1        0        0
+#	metal2        1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 906.77 (MB), peak = 941.44 (MB)
+#start 13th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	metal1        0        0
+#	metal2        1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 906.80 (MB), peak = 941.44 (MB)
+#start 14th optimization iteration ...
+#   number of violations = 2
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	metal1        0        0        0
+#	metal2        1        1        2
+#	Totals        1        1        2
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 906.79 (MB), peak = 941.44 (MB)
+#start 15th optimization iteration ...
+#   number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 905.44 (MB), peak = 941.44 (MB)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 7
+#Total wire length = 17904 um.
+#Total half perimeter of net bounding box = 17058 um.
+#Total wire length on LAYER metal1 = 8233 um.
+#Total wire length on LAYER metal2 = 4615 um.
+#Total wire length on LAYER metal3 = 3486 um.
+#Total wire length on LAYER metal4 = 1570 um.
+#Total wire length on LAYER metal5 = 0 um.
+#Total wire length on LAYER metal6 = 0 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total number of vias = 286
+#Total number of multi-cut vias = 27 (  9.4%)
+#Total number of single cut vias = 259 ( 90.6%)
+#Up-Via Summary (total 286):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# metal1           204 ( 98.1%)         4 (  1.9%)        208
+# metal2            48 ( 85.7%)         8 ( 14.3%)         56
+# metal3             7 ( 31.8%)        15 ( 68.2%)         22
+#-----------------------------------------------------------
+#                  259 ( 90.6%)        27 (  9.4%)        286 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:05
+#Elapsed time = 00:00:05
+#Increased memory = 2.81 (MB)
+#Total memory = 891.57 (MB)
+#Peak memory = 941.44 (MB)
+#Set shielded net as skip routing for Post Route optimization.
+#WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
+#
+#Start Post Route wire spreading..
+#WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
+#
+#Start DRC checking..
+#WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
+#   number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 907.41 (MB), peak = 941.44 (MB)
+#CELL_VIEW BATCHARGERcore,init has no DRC violation.
+#Total number of DRC violations = 0
+#
+#Start data preparation for wire spreading...
+#
+#Data preparation is done on Mon Jan 16 11:39:00 2023
+#
+#
+#Start Post Route Wire Spread.
+#Done with 59 horizontal wires in 5 hboxes and 14 vertical wires in 7 hboxes.
+#Complete Post Route Wire Spread.
+#
+#Total number of nets with non-default rule or having extra spacing = 5
+#Total wire length = 17412 um.
+#Total half perimeter of net bounding box = 16509 um.
+#Total wire length on LAYER metal1 = 7867 um.
+#Total wire length on LAYER metal2 = 4482 um.
+#Total wire length on LAYER metal3 = 3494 um.
+#Total wire length on LAYER metal4 = 1570 um.
+#Total wire length on LAYER metal5 = 0 um.
+#Total wire length on LAYER metal6 = 0 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total number of vias = 278
+#Total number of multi-cut vias = 27 (  9.7%)
+#Total number of single cut vias = 251 ( 90.3%)
+#Up-Via Summary (total 278):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# metal1           196 ( 98.0%)         4 (  2.0%)        200
+# metal2            48 ( 85.7%)         8 ( 14.3%)         56
+# metal3             7 ( 31.8%)        15 ( 68.2%)         22
+#-----------------------------------------------------------
+#                  251 ( 90.3%)        27 (  9.7%)        278 
+#
+#
+#Start DRC checking..
+#WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
+#   number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 907.62 (MB), peak = 941.44 (MB)
+#CELL_VIEW BATCHARGERcore,init has no DRC violation.
+#Total number of DRC violations = 0
+#   number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 907.62 (MB), peak = 941.44 (MB)
+#CELL_VIEW BATCHARGERcore,init has no DRC violation.
+#Total number of DRC violations = 0
+#Post Route wire spread is done.
+#-------------------------------------------------------------------------------
+#
+#	Shielding Summary
+#-------------------------------------------------------------------------------
+#WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
+#Average ratio              : 0.000
+#Total number of nets with non-default rule or having extra spacing = 7
+#Total wire length = 17965 um.
+#Total half perimeter of net bounding box = 17058 um.
+#Total wire length on LAYER metal1 = 8277 um.
+#Total wire length on LAYER metal2 = 4624 um.
+#Total wire length on LAYER metal3 = 3494 um.
+#Total wire length on LAYER metal4 = 1570 um.
+#Total wire length on LAYER metal5 = 0 um.
+#Total wire length on LAYER metal6 = 0 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total number of vias = 286
+#Total number of multi-cut vias = 27 (  9.4%)
+#Total number of single cut vias = 259 ( 90.6%)
+#Up-Via Summary (total 286):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# metal1           204 ( 98.1%)         4 (  1.9%)        208
+# metal2            48 ( 85.7%)         8 ( 14.3%)         56
+# metal3             7 ( 31.8%)        15 ( 68.2%)         22
+#-----------------------------------------------------------
+#                  259 ( 90.6%)        27 (  9.4%)        286 
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:08
+#Elapsed time = 00:00:08
+#Increased memory = 5.01 (MB)
+#Total memory = 893.77 (MB)
+#Peak memory = 941.44 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:08
+#Elapsed time = 00:00:08
+#Increased memory = 12.62 (MB)
+#Total memory = 877.22 (MB)
+#Peak memory = 941.44 (MB)
+#Number of warnings = 10
+#Total number of warnings = 37
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Mon Jan 16 11:39:00 2023
+#
+% End globalDetailRoute (date=01/16 11:39:00, total cpu=0:00:08.0, real=0:00:08.0, peak res=941.4M, current mem=874.3M)
+#routeDesign: cpu time = 00:00:08, elapsed time = 00:00:08, memory = 874.27 (MB), peak = 941.44 (MB)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+#% End routeDesign (date=01/16 11:39:00, total cpu=0:00:08.1, real=0:00:08.0, peak res=941.4M, current mem=874.3M)
+<CMD_INTERNAL> selectWire 249.3000 17.3000 249.5000 26.3000 2 vrefb
+<CMD> uiSetTool copy
+<CMD> editCopy 0.2 0
+<CMD> deselectAll
+<CMD_INTERNAL> selectWire 249.7000 17.3000 249.9000 26.3000 2 vrefb
+<CMD> uiSetTool copy
+<CMD> editCopy -0.892 0
+<CMD> deselectAll
+<CMD_INTERNAL> selectWire 257.7000 25.3000 257.9000 41.9000 2 vrefa
+<CMD> uiSetTool copy
+<CMD> editCopy -0.362 0
+<CMD> deselectAll
+<CMD_INTERNAL> selectWire 257.7000 25.3000 257.9000 41.9000 2 vrefa
+<CMD> uiSetTool copy
+<CMD> editCopy 0.461 0.033
+<CMD> deselectAll
+<CMD> uiSetTool addVia
+<CMD> setEditMode -via_cut_layer via
+<CMD> setEditMode -cut_class {}
+<CMD> setEditMode -via_cell_name 0x0
+<CMD> setEditMode -via_cut_layer via2
+<CMD> editAddVia 257.401 41.403
+<CMD> editAddVia 258.201 40.596
+<CMD> editAddVia 248.997 23.008
+<CMD> editAddVia 249.808 21.794
+<CMD_INTERNAL> selectWire 229.7000 19.3000 233.9000 19.5000 3 {tbat[7]}
+<CMD> uiSetTool copy
+<CMD> editCopy 27.522 21.904
+<CMD> deselectAll
+<CMD> uiSetTool copy
+<CMD_INTERNAL> selectWire 257.3000 41.3000 261.4200 41.5000 3 vrefa
+<CMD> editCopy 0.814 -0.649
+<CMD> deselectAll
+<CMD> uiSetTool addVia
+<CMD> setEditMode -via_cut_layer via3
+<CMD> setEditMode -cut_class {}
+<CMD> editAddVia 261.01 41.401
+<CMD> editAddVia 261.803 40.596
+<CMD_INTERNAL> selectWire 312.1000 0.2600 312.3000 60.3000 4 en
+<CMD> uiSetTool copy
+<CMD> editCopy -51.148 40.98
+<CMD> deselectAll
+<CMD_INTERNAL> selectWire 260.9000 41.2400 261.1000 101.2800 4 vrefa
+<CMD> uiSetTool copy
+<CMD> editCopy 0.035 41.739
+<CMD> deselectAll
+<CMD> uiSetTool addVia
+<CMD> editAddVia 260.997 142.83
+<CMD_INTERNAL> selectWire 260.9000 41.2400 261.1000 143.0200 4 vrefa
+<CMD> uiSetTool copy
+<CMD> editCopy 0.871 -0.751
+<CMD> deselectAll
+<CMD> uiSetTool addVia
+<CMD> editAddVia 261.804 142.116
+<CMD_INTERNAL> selectWire 257.3000 41.3000 261.1100 41.5000 3 vrefa
+<CMD> uiSetTool copy
+<CMD> editCopy -7.554 -19.557
+<CMD> deselectAll
+<CMD_INTERNAL> selectWire 249.7500 21.7000 253.5600 21.9000 3 vrefb
+<CMD> uiSetTool copy
+<CMD> editCopy -0.879 1.222
+<CMD> deselectAll
+<CMD_INTERNAL> selectWire 261.7000 40.6000 261.9000 142.2700 4 vrefa
+<CMD> uiSetTool copy
+<CMD> editCopy -8.489 -18.822
+<CMD> deselectAll
+<CMD_INTERNAL> selectWire 253.3000 21.7800 253.5000 123.4500 4 vrefa
+<CMD> editCopy 0 19.504
+<CMD> deselectAll
+<CMD> uiSetTool addVia
+<CMD> editAddVia 252.199 22.997
+<CMD> editAddVia 253.405 21.802
+<CMD_INTERNAL> selectWire 253.3000 21.7800 253.5000 142.9500 4 vrefa
+<CMD> uiSetTool copy
+<CMD> editCopy -1.028 1.167
+<CMD> deselectAll
+<CMD> uiSetTool addVia
+<CMD> editAddVia 252.201 143.816
+<CMD> editAddVia 253.395 142.788
+<CMD_INTERNAL> selectWire 359.2000 460.6000 361.2000 469.7400 4 iforcedbat
+<CMD> uiSetTool copy
+<CMD> editCopy 2 0 -keep_net_name
+<CMD> editCopy 4 0 -keep_net_name
+<CMD> editCopy 6 0 -keep_net_name
+<CMD> editCopy 8 0 -keep_net_name
+<CMD> editCopy 10 0 -keep_net_name
+<CMD> editCopy 12 0 -keep_net_name
+<CMD> editCopy 13 0 -keep_net_name
+<CMD> editCopy -2 0 -keep_net_name
+<CMD> editCopy -4 0 -keep_net_name
+<CMD> editCopy -6 0 -keep_net_name
+<CMD> editCopy -8 0 -keep_net_name
+<CMD> editCopy -10 0 -keep_net_name
+<CMD> editCopy -12 0 -keep_net_name
+<CMD> editCopy -14 0 -keep_net_name
+<CMD> editCopy -16 0 -keep_net_name
+<CMD> editCopy -18 0 -keep_net_name
+<CMD> editCopy -20 0 -keep_net_name
+<CMD> editCopy -22 0 -keep_net_name
+<CMD> editCopy -24 0 -keep_net_name
+<CMD> editCopy -26 0 -keep_net_name
+<CMD> editCopy -28 0 -keep_net_name
+<CMD> editCopy -30 0 -keep_net_name
+<CMD> editCopy -32 0 -keep_net_name
+<CMD> editCopy -34 0 -keep_net_name
+<CMD> editCopy -36 0 -keep_net_name
+<CMD> editCopy -38 0 -keep_net_name
+<CMD> editCopy -40 0 -keep_net_name
+<CMD> editCopy -42 0 -keep_net_name
+<CMD> editCopy -44 0 -keep_net_name
+<CMD> editCopy -46 0 -keep_net_name
+<CMD> editCopy -48 0 -keep_net_name
+<CMD> editCopy -50 0 -keep_net_name
+<CMD> editCopy -52 0 -keep_net_name
+<CMD> editCopy -54 0 -keep_net_name
+<CMD> editCopy -56 0 -keep_net_name
+<CMD> editCopy -58 0 -keep_net_name
+<CMD> editCopy -60 0 -keep_net_name
+<CMD> editCopy -62 0 -keep_net_name
+<CMD> editCopy -63 0 -keep_net_name
+<CMD> deselectAll
+<CMD_INTERNAL> selectWire 0.2600 292.8000 18.8000 294.8000 3 vin
+<CMD> uiSetTool copy
+<CMD> editCopy 0 -2 -keep_net_name
+<CMD> editCopy 0 -4 -keep_net_name
+<CMD> editCopy 0 -6 -keep_net_name
+<CMD> editCopy 0 -7.5 -keep_net_name
+<CMD> editCopy 0 2 -keep_net_name
+<CMD> editCopy 0 4 -keep_net_name
+<CMD> editCopy 0 6 -keep_net_name
+<CMD> editCopy 0 8 -keep_net_name
+<CMD> editCopy 0 10 -keep_net_name
+<CMD> editCopy 0 12 -keep_net_name
+<CMD> editCopy 0 14 -keep_net_name
+<CMD> editCopy 0 16 -keep_net_name
+<CMD> editCopy 0 18 -keep_net_name
+<CMD> editCopy 0 20 -keep_net_name
+<CMD> editCopy 0 22 -keep_net_name
+<CMD> editCopy 0 24 -keep_net_name
+<CMD> editCopy 0 26 -keep_net_name
+<CMD> editCopy 0 28 -keep_net_name
+<CMD> editCopy 0 30 -keep_net_name
+<CMD> editCopy 0 32 -keep_net_name
+<CMD> editCopy 0 34 -keep_net_name
+<CMD> editCopy 0 36 -keep_net_name
+<CMD> editCopy 0 38 -keep_net_name
+<CMD> editCopy 0 40 -keep_net_name
+<CMD> editCopy 0 40.5 -keep_net_name
+<CMD> deselectAll
+<CMD_INTERNAL> selectWire 16.8000 292.8000 20.2000 294.8000 3 vin
+<CMD> uiSetTool copy
+<CMD> editCopy -1.012 -2 -keep_net_name
+<CMD> editCopy -1.012 -4 -keep_net_name
+<CMD> editCopy -1.012 -6 -keep_net_name
+<CMD> editCopy -1.012 -7.5 -keep_net_name
+<CMD> editCopy -1.012 2 -keep_net_name
+<CMD> editCopy -1.012 4 -keep_net_name
+<CMD> editCopy -1.012 6 -keep_net_name
+<CMD> editCopy -1.012 8 -keep_net_name
+<CMD> editCopy -1.012 10 -keep_net_name
+<CMD> editCopy -1.012 12 -keep_net_name
+<CMD> editCopy -1.012 14 -keep_net_name
+<CMD> editCopy -1.012 16 -keep_net_name
+<CMD> editCopy -1.012 18 -keep_net_name
+<CMD> editCopy -1.012 20 -keep_net_name
+<CMD> editCopy -1.012 22 -keep_net_name
+<CMD> editCopy -1.012 24 -keep_net_name
+<CMD> editCopy -1.012 26 -keep_net_name
+<CMD> editCopy -1.012 28 -keep_net_name
+<CMD> editCopy -1.012 30 -keep_net_name
+<CMD> editCopy -1.012 32 -keep_net_name
+<CMD> editCopy -1.012 34 -keep_net_name
+<CMD> editCopy -1.012 36 -keep_net_name
+<CMD> editCopy -1.012 38 -keep_net_name
+<CMD> editCopy -1.012 40 -keep_net_name
+<CMD> editCopy -1.012 40.5 -keep_net_name
+<CMD> deselectAll
+<CMD> write_lef_abstract -cutObsMinSpacing BATCHARGERcore.lef

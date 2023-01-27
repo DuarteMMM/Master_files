@@ -1,0 +1,25 @@
+P2 information - PLEASE READ INSTRUCTIONS CAREFULLY
+******************************************************************************
+
+Date P2 (20 min slots)
+DISCUSSIONS IN ROOM V1.07
+
+Thursday, November 10: 16h30-18h30
+
+*****************************************************************************
+
+The class will organize itself in groups of 3
+
+P2 slides (due on November 8 by email to joao.conde@tecnico.ulisboa.pt) is a 5-slide presentation of the group proposed solution 
+
+P2 will be discussed with each group (20 minutes) in November 9-10 [the calendar and a link for registration will be available soon]
+
+P2 challenge: use the concepts that you learned in the Nanotechnology/Nanobiotechnology course to develop an original proposal for one of the following topics: 
+
+TOPIC 1 - an integrated system to check if people who are going to be admitted to a hospital are colonized by antibiotic-resistant bacteria. This system should be able to have an answer in about 15 min and be inexpensive (with a potential cost at or below 10 Euros). Note that the system should be sensitive to 10-100 antibiotic-resistant bacteria per swab. 
+
+TOPIC 2 - an integrated system that functions as an artificial nose with applications in biosafety and medicine. The system should be able to identify a panel of specific molecules of interest for environmental control or disease detection. Here it is importante to consider a reasonable-sized panel of compounds to detect (>10) 
+
+Your proposal should consider (i) the general state of the art; (ii) the state of the art using micro and nanotechnological approaches; (iii) your proposed original solution; and (iv)  its technical details. Your slides should include a summary of this information. 
+
+BE CREATIVE, WORK IN A TEAM, AND START EARLY!
