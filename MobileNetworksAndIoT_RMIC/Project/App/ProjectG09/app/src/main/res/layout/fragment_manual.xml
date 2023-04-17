@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentManual">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/panel_voltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="Panel Voltage"
+        android:textAllCaps="false"
+        android:textColor="#03A9F4"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/power_manual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panel_voltage"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="Nominal Power"
+        android:textAllCaps="false"
+        android:textColor="#03A9F4"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="311dp"
+        android:layout_height="85dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:max="90"
+        android:min="-90"
+        android:progress="0"
+        android:scrollbars="vertical"
+        android:thumbTint="#0f6fab"
+        android:progressTint="#469dd4"/>
+
+    <TextView
+        android:id="@+id/Azimuth"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="170dp"
+        android:gravity="center"
+        android:textColorLink="#F44336" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="311dp"
+        android:layout_height="85dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:max="90"
+        android:min="-90"
+        android:progress="0"
+        android:thumbTint="#0f6fab"
+        android:progressTint="#469dd4"/>
+
+    <TextView
+        android:id="@+id/Elevation"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="270dp"
+        android:gravity="center" />
+
+</RelativeLayout>

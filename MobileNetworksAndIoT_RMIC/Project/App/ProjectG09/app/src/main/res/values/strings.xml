@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SolarMax</string>
+    <string name="measurement">Measurement</string>
+    <string name="alarm_status">Alarm Status</string>
+    <string name="button">Tracking</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "568775227480",
+    "firebase_url": "https://iot-alarm-app-group9-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "iot-alarm-app-group9",
+    "storage_bucket": "iot-alarm-app-group9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568775227480:android:4b665327daa31d15f1b22d",
+        "android_client_info": {
+          "package_name": "com.example.assignment1gr09"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568775227480-tb4k1bl9qj94k9ep2uh54c1emck47rnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdl62TZVtnSWS1Bm7ENsUzMYDnoHD2o8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568775227480-tb4k1bl9qj94k9ep2uh54c1emck47rnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568775227480:android:03dae6f1104bd9f0f1b22d",
+        "android_client_info": {
+          "package_name": "com.example.assignment1gr9"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568775227480-tb4k1bl9qj94k9ep2uh54c1emck47rnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdl62TZVtnSWS1Bm7ENsUzMYDnoHD2o8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568775227480-tb4k1bl9qj94k9ep2uh54c1emck47rnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568775227480:android:e40cf2ef16f5f8cdf1b22d",
+        "android_client_info": {
+          "package_name": "com.rmic.iotalarmapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568775227480-tb4k1bl9qj94k9ep2uh54c1emck47rnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdl62TZVtnSWS1Bm7ENsUzMYDnoHD2o8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568775227480-tb4k1bl9qj94k9ep2uh54c1emck47rnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
