@@ -1,0 +1,13 @@
+/*gain.gel Create slider and vary amplitude (gain) of sinewave*/
+
+menuitem "Input Parameters"
+
+slider Gain(0,100,5,50, gain_parameter) /*incr by 5,up to 35*/
+{
+        gain = gain_parameter;        /*vary gain of sine*/
+}
+
+slider Frequency(1,16384,5,50, freq_parameter) /*incr by 5,up to 35*/
+{
+        frequency = freq_parameter;        /*vary gain of sine*/
+}

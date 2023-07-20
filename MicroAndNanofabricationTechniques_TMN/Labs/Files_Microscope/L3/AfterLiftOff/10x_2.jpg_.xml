@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Properties>
+  <Vignetting Item="a4b39b5c-2fba-4e67-b088-5596816a73fb">
+    <Value Element="b57d3000-0ac6-4819-a609-272a33140aca" Interface="99b44940-bfe1-4083-ada1-be703f4b8e04">False</Value>
+    <VingettingPower Element="202ca148-56e5-4c17-ae3e-d2762af53e1f" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">0.5</VingettingPower>
+    <VingettingLowerBound Element="8e7372d9-427a-49e0-a623-aa5a1a79bc3a" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">0.5</VingettingLowerBound>
+    <VingettingHigherBound Element="02c58dde-e460-4b58-97a6-3f2984448240" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">1</VingettingHigherBound>
+    <VingettingInner Element="95d56075-eca5-4cf4-a724-077b9c25c5e3" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">0.5</VingettingInner>
+  </Vignetting>
+  <PerspectiveCorrection Item="3fed43e9-1da9-490c-b75c-2572053f9b29">
+    <Value Element="b57d3000-0ac6-4819-a609-272a33140aca" Interface="99b44940-bfe1-4083-ada1-be703f4b8e04">False</Value>
+    <PerspectiveCorrectionStrength Element="a22bca96-d555-474d-b563-8b75e89b378b" Interface="99b44940-bfe1-4083-ada1-be703f4b8e03">0</PerspectiveCorrectionStrength>
+    <PerspectiveCorrectionOffsetX Element="aa99c20b-b064-4148-b22d-50cea5c4f027" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">0</PerspectiveCorrectionOffsetX>
+    <PerspectiveCorrectionOffsetY Element="236125c5-0825-402e-b199-3007e1f2c45c" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">0</PerspectiveCorrectionOffsetY>
+  </PerspectiveCorrection>
+  <VideoFormat Item="4e61329e-0d6b-4cb6-9fb4-4d5c6dffa593">
+    <Value Element="aa746763-3eac-44e9-a4c2-3ab514400170" Interface="e69469c8-c17e-4b0c-bb4d-0c427927ab7e">RGB32 ({Width=2048, Height=1536})</Value>
+  </VideoFormat>
+  <Framerate Item="eef737af-d7ed-46e2-ad34-7790fb095458">
+    <Value Element="27f458cc-15fd-4fd7-b968-9cabb71fc457" Interface="2073909f-c0fc-4bab-9724-078efe771580">10</Value>
+  </Framerate>
+  <Brightness Item="284c0e06-010b-45bf-8291-09d90a459b28">
+    <Value Element="b57d3000-0ac6-4819-a609-272a33140aca" Interface="99b44940-bfe1-4083-ada1-be703f4b8e03">0</Value>
+  </Brightness>
+  <Contrast Item="284c0e07-010b-45bf-8291-09d90a459b28">
+    <Value Element="b57d3000-0ac6-4819-a609-272a33140aca" Interface="99b44940-bfe1-4083-ada1-be703f4b8e03">0</Value>
+  </Contrast>
+  <Gamma Item="284c0e0b-010b-45bf-8291-09d90a459b28">
+    <Value Element="b57d3000-0ac6-4819-a609-272a33140aca" Interface="99b44940-bfe1-4083-ada1-be703f4b8e03">100</Value>
+  </Gamma>
+  <Sharpness Item="284c0e0a-010b-45bf-8291-09d90a459b28">
+    <Value Element="b57d3000-0ac6-4819-a609-272a33140aca" Interface="99b44940-bfe1-4083-ada1-be703f4b8e03">0</Value>
+  </Sharpness>
+  <Denoise Item="c3c9944a-e6f6-4e25-a0be-53c066ab65d8">
+    <Value Element="b57d3000-0ac6-4819-a609-272a33140aca" Interface="99b44940-bfe1-4083-ada1-be703f4b8e03">0</Value>
+  </Denoise>
+  <ToneMapping Item="3d505ac4-1a28-428b-83e5-85aa8eb441c1">
+    <Value Element="b57d3000-0ac6-4819-a609-272a33140aca" Interface="99b44940-bfe1-4083-ada1-be703f4b8e04">True</Value>
+    <ToneMappingIntensity Element="bd2f432a-02c1-4f32-9aeb-687ca117d2e7" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">1</ToneMappingIntensity>
+    <ToneMappingContrast Element="a72e61ad-b5c5-45f2-bf96-52651534988e" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">0</ToneMappingContrast>
+  </ToneMapping>
+  <ColorMatrix Item="7f7e24e3-7162-42ef-bf5d-99a359cb32f2">
+    <Value Element="b57d3000-0ac6-4819-a609-272a33140aca" Interface="99b44940-bfe1-4083-ada1-be703f4b8e04">True</Value>
+    <ColorMatrixRR Element="57480aa0-2883-4c7d-a066-357d07c4527d" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">1</ColorMatrixRR>
+    <ColorMatrixRG Element="57480aa1-2883-4c7d-a066-357d07c4527d" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">0</ColorMatrixRG>
+    <ColorMatrixRB Element="57480aa2-2883-4c7d-a066-357d07c4527d" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">0</ColorMatrixRB>
+    <ColorMatrixGR Element="57480aa3-2883-4c7d-a066-357d07c4527d" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">0</ColorMatrixGR>
+    <ColorMatrixGG Element="57480aa4-2883-4c7d-a066-357d07c4527d" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">1</ColorMatrixGG>
+    <ColorMatrixGB Element="57480aa5-2883-4c7d-a066-357d07c4527d" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">0</ColorMatrixGB>
+    <ColorMatrixBR Element="57480aa6-2883-4c7d-a066-357d07c4527d" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">0</ColorMatrixBR>
+    <ColorMatrixBG Element="57480aa7-2883-4c7d-a066-357d07c4527d" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">0</ColorMatrixBG>
+    <ColorMatrixBB Element="57480aa8-2883-4c7d-a066-357d07c4527d" Interface="99b44940-bfe1-4083-ada1-be703f4b8e08">1</ColorMatrixBB>
+  </ColorMatrix>
+</Properties>

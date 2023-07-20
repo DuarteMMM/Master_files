@@ -1,0 +1,22 @@
+
+**** Build of configuration Debug for project nco ****
+
+"D:\\TI\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: C5500 Compiler'
+"D:/TI/ccsv6/tools/compiler/c5500_4.4.1/bin/cl55" -vcpu:3.3 --memory_model=large -g --include_path="D:/TI/ccsv6/tools/compiler/c5500_4.4.1/include" --include_path="D:/ti/ccsv6/ccs_base/usbstk5515_BSL_RevA/usbstk5515_v1/include" --diag_warning=225 --ptrdiff_size=32 --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 88: warning: variable "DataInRight" was set but never used
+"../main.c", line 91: warning: variable "Buffer" was set but never used
+"../main.c", line 93: warning: variable "Delta_min" was declared but never referenced
+"../main.c", line 93: warning: variable "Delta_max" was declared but never referenced
+"../main.c", line 95: warning: variable "Gain" was declared but never referenced
+'Finished building: ../main.c'
+' '
+'Building target: nco.out'
+'Invoking: C5500 Linker'
+"D:/TI/ccsv6/tools/compiler/c5500_4.4.1/bin/cl55" -vcpu:3.3 --memory_model=large -g --diag_warning=225 --ptrdiff_size=32 -z -m"nco.map" -i"D:/TI/ccsv6/tools/compiler/c5500_4.4.1/lib" -i"D:/ti/ccsv6/ccs_base/usbstk5515_BSL_RevA/usbstk5515_v1/lib" -i"D:/TI/ccsv6/tools/compiler/c5500_4.4.1/include" -i"C:/Users/gngt/ti/BoardLibraries/usbstk5515_BSL_RevA/usbstk5515_v1/lib" --reread_libs --warn_sections --xml_link_info="loop_linkInfo.xml" --rom_model -o "nco.out" "./aic3204_test.obj" "./main.obj" "../lnkx.cmd"  -l"usbstk5515bsl.lib" -l"rts55x_eh.lib" 
+<Linking>
+'Finished building target: nco.out'
+' '
+
+**** Build Finished ****

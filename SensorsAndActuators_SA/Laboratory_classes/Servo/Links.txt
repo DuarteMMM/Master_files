@@ -1,0 +1,7 @@
+Change PWM frequency
+https://www.researchgate.net/post/Can_we_control_the_rotation_speed_of_a_servo_motor_If_yes_how_can_we_control
+
+Library <VarSpeedServo.h>
+https://www.youtube.com/watch?v=t4KRksxjP6k
+https://forum.arduino.cc/t/varspeedservo-a-modified-servo-library-with-speed-control/61404
+

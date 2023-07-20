@@ -1,0 +1,1 @@
+"./src/Loop_intr67.obj" "./src/Vectors_intr.obj" "./src/c6713dskinit.obj" "../C6713dsk.cmd" -l"libc.a" -lD:\TI\ccsv6\ccs_base\c6000\csl6713\lib_6x\Debug\csl6713.lib -lD:\TI\ccsv6\ccs_base\c6000\dsk6713\lib_6x\Debug\dsk6713.lib 

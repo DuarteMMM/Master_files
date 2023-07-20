@@ -1,0 +1,60 @@
+### Measurement Parameters : 
+ReverseFieldSweep : True
+ReverseCurrentSweep : False
+AlternateCurrentSweep : False
+VoltageErrorMonitoring : False [%]
+VoltageError : 
+Voltage Integration Time : 10 [ms]
+NumberOfAverages : 5
+FieldStabilizationTime : 1000 [s]
+MaximumBiasSlope : 0.001 [mA/s]
+MaximumFieldSlope : 75 [Oe/s]
+FieldScanValues : -141.00, -121.00, -101.00, -81.00, -61.00, -41.00, -40.00, -36.00, -32.00, -28.00, -24.00, -20.00, -16.00, -12.00, -8.00, -4.00, +0.00 , +4.00 , +8.00 , +12.00 , +16.00 , +20.00 , +24.00 , +28.00 , +32.00 , +36.00 , +40.00 , +60.00 , +80.00 , +100.00 , +120.00 , +140.00 , +141.00 , +141.00 , +140.00 , +120.00 , +100.00 , +80.00 , +60.00 , +40.00 , +36.00 , +32.00 , +28.00 , +24.00 , +20.00 , +16.00 , +12.00 , +8.00 , +4.00 , +0.00 , -4.00, -8.00, -12.00, -16.00, -20.00, -24.00, -28.00, -32.00, -36.00, -40.00, -41.00, -61.00, -81.00, -101.00, -121.00, -141.00 [Oe]
+CurrentScanValues : +1.000000E-4  [A]
+FieldMax : 141 [Oe]
+FieldMin : -141 [Oe]
+BiasCurrentMax : 0.0001 [A]
+BiasCurrentMin : 0.0001 [A]
+
+### Transfer Curve File List : 
+NumberOfMeasurements : 1
+D8_C2X50_4pt - Current Bias +1.000000E-4  [A].tcd
+
+
+
+
+# D8_C2X50_4pt - Current Bias +1.000000E-4  [A].tcd
+MR : 12.58 [%]
+Ibias : +1.000000E-4  [A]
+Rmin : 7.239268E+0 [Ohm]
+Rmax : 8.149730E+0 [Ohm]
+delta R : 9.104620E-1 [Ohm]
+Vmin : +7.239268E-4  [V]
+Vmax : +8.149730E-4  [V]
+delta V : 9.104620E-5 [V]
+Voltage Error (STD) : 2.578670E-6 [V]
+Voltage Error (PtP) : 7.814000E-6 [V]
+TC Score : 6 [0-6]
+H(20% Up) : +41.04  [Oe]
+H(50% Up) : -11.55 [Oe]
+H(80% Up) : -59.45 [Oe]
+H(20% Down) : +43.91  [Oe]
+H(50% Down) : -7.45 [Oe]
+H(80% Down) : -57.20 [Oe]
+delta H Up : +100.50  [Oe]
+delta H Down : +101.11  [Oe]
+Hf : +9.50  [Oe]
+Hc : +2.05  [Oe]
+dMRdH3 max : +1.850975E-2  [%/Oe]
+dMRdH3 min : -2.767184E-1 [%/Oe]
+dRdH3 max : +1.247162E-3  [Ohm/Oe]
+dRdH3 min : -6.641750E-3 [Ohm/Oe]
+dVdH3 max : +1.247162E-7  [V/Oe]
+dVdH3 min : -6.641750E-7 [V/Oe]
+DMRDH2 max : +3.221596E-2  [%/Oe]
+DMRDH2 min : -1.069998E-1 [%/Oe]
+DRdH2 max : +2.332200E-3  [Ohm/Oe]
+DRDH2 min : -7.746000E-3 [Ohm/Oe]
+DVDH2 max : +2.332200E-7  [V/Oe]
+DVDH2 min : -7.746000E-7 [V/Oe]
+

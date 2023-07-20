@@ -1,0 +1,60 @@
+### Measurement Parameters : 
+ReverseFieldSweep : True
+ReverseCurrentSweep : False
+AlternateCurrentSweep : False
+VoltageErrorMonitoring : False [%]
+VoltageError : 
+Voltage Integration Time : 10 [ms]
+NumberOfAverages : 5
+FieldStabilizationTime : 1000 [s]
+MaximumBiasSlope : 0.001 [mA/s]
+MaximumFieldSlope : 75 [Oe/s]
+FieldScanValues : -161.00, -141.00, -121.00, -101.00, -100.00, -96.00, -92.00, -88.00, -84.00, -80.00, -76.00, -72.00, -68.00, -64.00, -60.00, -56.00, -52.00, -48.00, -44.00, -40.00, -36.00, -32.00, -28.00, -24.00, -20.00, -16.00, -12.00, -8.00, -4.00, +0.00 , +4.00 , +8.00 , +12.00 , +16.00 , +20.00 , +24.00 , +28.00 , +32.00 , +36.00 , +40.00 , +44.00 , +48.00 , +52.00 , +56.00 , +60.00 , +64.00 , +68.00 , +72.00 , +76.00 , +80.00 , +84.00 , +88.00 , +92.00 , +96.00 , +100.00 , +120.00 , +140.00 , +160.00 , +161.00 , +161.00 , +160.00 , +140.00 , +120.00 , +100.00 , +96.00 , +92.00 , +88.00 , +84.00 , +80.00 , +76.00 , +72.00 , +68.00 , +64.00 , +60.00 , +56.00 , +52.00 , +48.00 , +44.00 , +40.00 , +36.00 , +32.00 , +28.00 , +24.00 , +20.00 , +16.00 , +12.00 , +8.00 , +4.00 , +0.00 , -4.00, -8.00, -12.00, -16.00, -20.00, -24.00, -28.00, -32.00, -36.00, -40.00, -44.00, -48.00, -52.00, -56.00, -60.00, -64.00, -68.00, -72.00, -76.00, -80.00, -84.00, -88.00, -92.00, -96.00, -100.00, -101.00, -121.00, -141.00, -161.00 [Oe]
+CurrentScanValues : +1.000000E-4  [A]
+FieldMax : 161 [Oe]
+FieldMin : -161 [Oe]
+BiasCurrentMax : 0.0001 [A]
+BiasCurrentMin : 0.0001 [A]
+
+### Transfer Curve File List : 
+NumberOfMeasurements : 1
+D2_E2x50_4pt_160Oe - Current Bias +1.000000E-4  [A].tcd
+
+
+
+
+# D2_E2x50_4pt_160Oe - Current Bias +1.000000E-4  [A].tcd
+MR : 193.55 [%]
+Ibias : +1.000000E-4  [A]
+Rmin : 6.190872E+1 [Ohm]
+Rmax : 1.817332E+2 [Ohm]
+delta R : 1.198244E+2 [Ohm]
+Vmin : +6.190872E-3  [V]
+Vmax : +1.817332E-2  [V]
+delta V : 1.198244E-2 [V]
+Voltage Error (STD) : 1.192704E-6 [V]
+Voltage Error (PtP) : 3.420000E-6 [V]
+TC Score : 6 [0-6]
+H(20% Up) : +4.26  [Oe]
+H(50% Up) : -52.87 [Oe]
+H(80% Up) : -79.22 [Oe]
+H(20% Down) : +5.58  [Oe]
+H(50% Down) : -51.81 [Oe]
+H(80% Down) : -77.18 [Oe]
+delta H Up : +83.48  [Oe]
+delta H Down : +82.77  [Oe]
+Hf : +52.34  [Oe]
+Hc : +0.53  [Oe]
+dMRdH3 max : +5.507340E-3  [%/Oe]
+dMRdH3 min : -2.886532E+0 [%/Oe]
+dRdH3 max : +3.128095E-3  [Ohm/Oe]
+dRdH3 min : -2.022425E+0 [Ohm/Oe]
+dVdH3 max : +3.128095E-7  [V/Oe]
+dVdH3 min : -2.022425E-4 [V/Oe]
+DMRDH2 max : +5.782707E-3  [%/Oe]
+DMRDH2 min : -3.854990E+0 [%/Oe]
+DRdH2 max : +3.580000E-3  [Ohm/Oe]
+DRDH2 min : -2.386575E+0 [Ohm/Oe]
+DVDH2 max : +3.580000E-7  [V/Oe]
+DVDH2 min : -2.386575E-4 [V/Oe]
+
