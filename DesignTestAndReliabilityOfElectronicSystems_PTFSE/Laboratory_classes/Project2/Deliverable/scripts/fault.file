@@ -1,0 +1,1 @@
+fault_target testbench_bist.top_level -type SA0+SA1

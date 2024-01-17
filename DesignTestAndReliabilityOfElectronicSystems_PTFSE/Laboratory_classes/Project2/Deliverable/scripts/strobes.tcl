@@ -1,0 +1,1 @@
+fs_strobe {top_level.bist_end top_level.pass_nfail} 
